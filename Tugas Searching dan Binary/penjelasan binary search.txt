@@ -1,0 +1,19 @@
+Pertama, program akan meminta kita untuk menginputkan sebuah angka yang ingin kita cari dalam array. Untuk membuat program pencarian Binary, gunakan perintah "
+int iterativeBinarySearch(int array[], int start_index, int end_index, int element){
+   while (start_index <= end_index){
+      int middle = start_index + (end_index- start_index )/2;
+      if (array[middle] == element)
+         return middle;
+      if (array[middle] < element)
+         start_index = middle + 1;
+      else
+         end_index = middle - 1;
+   }
+   return -1;
+}
+Pada program untuk pencarian binary,program akan melakukan mencari angka yang akan 
+diinputkan dengan mencari nilai tengah dari sebuah array dahulu 
+lalu mencari angka yang cocok dengan mempersempit lokasi menjadi satu,yaitu angka
+ yang akan dicari.jika angka yang dicari ada maka program akan memberitahu 
+lokasi atau index dari angka tersebut di array.
+jika angka yang dicari tidak ada,maka program tersebut menampilkan sebuah pernyataan Angka tersebut tidak ditemukan
