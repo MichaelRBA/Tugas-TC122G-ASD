@@ -1,0 +1,22 @@
+pertama,program akan meminta untuk menginputkan data dalam array.
+lalu program akan meminta untuk kita menginputkan data ke dalam sebuah array
+dengan perintah 
+for(i=0; i<n; i++)
+	{
+		scanf("%d", &Data[i]);
+	}
+", data yang dapat diinputkan dibatasi sampai jumlah data yang diinputkan sebelumnya. 
+	Setelah itu, program akan meminta kita menginputkan data yang ingin dicari. Dengan perintah " 
+for(i=0; i<n; i++)
+	{
+		if(Data[i]==cari)
+		{
+		printf("Angka %d KETEMU, dan tersimpan di lokasi/indeks %d\n", cari, i+1);
+		jumlah++;
+		}
+	}
+jika sudah program akan mencari dan akan menampilkan posisi
+data yang dicari di array.lalu ada penambahan perintah yaitu jumlah++;,
+digunakan untuk mendeteksi sebuah data yang dicari di dalam data yang berjumlah lebih dari satu
+jika data yang dicari tidak ada,maka program akan menamilkan bahwa data tidak ditemukan.lalu,program akan menampikan 
+sebuah jumlah data yang ada di dalam array
